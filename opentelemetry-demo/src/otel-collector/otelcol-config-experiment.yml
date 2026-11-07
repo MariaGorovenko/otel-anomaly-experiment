@@ -1,0 +1,16 @@
+exporters:
+  file/experiment_logs:
+    path: /experiment-data/logs.jsonl
+    format: json
+
+  file/experiment_metrics:
+    path: /experiment-data/metrics.jsonl
+    format: json
+
+service:
+  pipelines:
+    logs:
+      exporters: [debug, file/experiment_logs]
+
+    metrics:
+      exporters: [debug, file/experiment_metrics]

@@ -1,0 +1,5 @@
+services:
+  load-generator:
+    restart: "no"
+    environment:
+      LOCUST_USERS: "5"

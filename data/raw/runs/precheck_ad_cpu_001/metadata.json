@@ -1,0 +1,83 @@
+{
+  "metadata_schema_version": 3,
+  "run_id": "precheck_ad_cpu_001",
+  "scenario": "fault",
+  "warmup_seconds": 180,
+  "duration_seconds": 900,
+  "collector_started_at": "2026-11-07T00:34:51.314463+00:00",
+  "observation_started_at": "2026-11-07T00:37:51.698122+00:00",
+  "observation_ended_at": "2026-11-07T00:52:52.055833+00:00",
+  "collector_stopped_at": "2026-11-07T00:52:53.817638+00:00",
+  "collector_restored": true,
+  "status": "completed",
+  "phases": {
+    "normal": {
+      "start": "2026-11-07T00:37:51.699438+00:00",
+      "end": "2026-11-07T00:42:51.690283+00:00"
+    },
+    "fault": {
+      "switch_requested_at": "2026-11-07T00:42:51.692223+00:00",
+      "switch_confirmed_at": "2026-11-07T00:42:51.885692+00:00",
+      "file_confirmed_at": "2026-11-07T00:42:51.885692+00:00",
+      "start": "2026-11-07T00:42:51.885692+00:00",
+      "start_boundary_basis": "file_confirmed_not_service_applied",
+      "end_requested_at": "2026-11-07T00:47:51.878549+00:00",
+      "end": "2026-11-07T00:47:52.049704+00:00"
+    },
+    "recovery": {
+      "start": "2026-11-07T00:47:52.049704+00:00",
+      "start_boundary_basis": "file_confirmed_not_service_applied",
+      "end": "2026-11-07T00:52:52.052847+00:00"
+    }
+  },
+  "switch_events": [
+    {
+      "flag": "adHighCpu",
+      "requested_variant": "on",
+      "requested_at": "2026-11-07T00:42:51.692223+00:00",
+      "file_confirmed_at": "2026-11-07T00:42:51.885692+00:00",
+      "file_status": "confirmed",
+      "service_applied": "unknown"
+    },
+    {
+      "flag": "adHighCpu",
+      "requested_variant": "off",
+      "requested_at": "2026-11-07T00:47:51.878549+00:00",
+      "file_confirmed_at": "2026-11-07T00:47:52.049704+00:00",
+      "file_status": "confirmed",
+      "service_applied": "unknown"
+    },
+    {
+      "flag": "adHighCpu",
+      "requested_variant": "off",
+      "requested_at": "2026-11-07T00:52:52.302057+00:00",
+      "file_confirmed_at": "2026-11-07T00:52:52.486351+00:00",
+      "file_status": "confirmed",
+      "service_applied": "unknown"
+    }
+  ],
+  "fault_flag": "adHighCpu",
+  "fault_variant": "on",
+  "root_service": "ad",
+  "baseline_seconds": 300,
+  "fault_seconds": 300,
+  "recovery_seconds": 300,
+  "flag_restored": true,
+  "locust_users_start": 5,
+  "locust_requests": 824,
+  "locust_failures": 0,
+  "locust_users_end": 5,
+  "flag_reset_at": "2026-11-07T00:52:52.486351+00:00",
+  "logs": {
+    "exists": true,
+    "size_bytes": 13578897,
+    "valid_lines": 3899,
+    "invalid_lines": 0
+  },
+  "metrics": {
+    "exists": true,
+    "size_bytes": 41566686,
+    "valid_lines": 815,
+    "invalid_lines": 0
+  }
+}

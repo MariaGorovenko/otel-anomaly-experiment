@@ -1,0 +1,4 @@
+services:
+  otel-collector:
+    volumes:
+      - ${EXPERIMENT_RUN_DIR:?Specify EXPERIMENT_RUN_DIR}:/experiment-data

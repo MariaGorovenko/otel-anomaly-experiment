@@ -1,0 +1,83 @@
+{
+  "metadata_schema_version": 3,
+  "run_id": "precheck_catalog_lock_001",
+  "scenario": "fault",
+  "warmup_seconds": 180,
+  "duration_seconds": 900,
+  "collector_started_at": "2026-11-07T02:09:01.285189+00:00",
+  "observation_started_at": "2026-11-07T02:12:01.626044+00:00",
+  "observation_ended_at": "2026-11-07T02:27:00.393488+00:00",
+  "collector_stopped_at": "2026-11-07T02:27:02.446314+00:00",
+  "collector_restored": true,
+  "status": "completed",
+  "phases": {
+    "normal": {
+      "start": "2026-11-07T02:12:01.626725+00:00",
+      "end": "2026-11-07T02:17:01.615134+00:00"
+    },
+    "fault": {
+      "switch_requested_at": "2026-11-07T02:17:01.616980+00:00",
+      "switch_confirmed_at": "2026-11-07T02:17:01.824258+00:00",
+      "file_confirmed_at": "2026-11-07T02:17:01.824258+00:00",
+      "start": "2026-11-07T02:17:01.824258+00:00",
+      "start_boundary_basis": "file_confirmed_not_service_applied",
+      "end_requested_at": "2026-11-07T02:22:01.817850+00:00",
+      "end": "2026-11-07T02:22:01.980199+00:00"
+    },
+    "recovery": {
+      "start": "2026-11-07T02:22:01.980199+00:00",
+      "start_boundary_basis": "file_confirmed_not_service_applied",
+      "end": "2026-11-07T02:27:00.391303+00:00"
+    }
+  },
+  "switch_events": [
+    {
+      "flag": "productCatalogLockContention",
+      "requested_variant": "on",
+      "requested_at": "2026-11-07T02:17:01.616980+00:00",
+      "file_confirmed_at": "2026-11-07T02:17:01.824258+00:00",
+      "file_status": "confirmed",
+      "service_applied": "unknown"
+    },
+    {
+      "flag": "productCatalogLockContention",
+      "requested_variant": "off",
+      "requested_at": "2026-11-07T02:22:01.817850+00:00",
+      "file_confirmed_at": "2026-11-07T02:22:01.980199+00:00",
+      "file_status": "confirmed",
+      "service_applied": "unknown"
+    },
+    {
+      "flag": "productCatalogLockContention",
+      "requested_variant": "off",
+      "requested_at": "2026-11-07T02:27:00.924234+00:00",
+      "file_confirmed_at": "2026-11-07T02:27:01.123543+00:00",
+      "file_status": "confirmed",
+      "service_applied": "unknown"
+    }
+  ],
+  "fault_flag": "productCatalogLockContention",
+  "fault_variant": "on",
+  "root_service": "product-catalog",
+  "baseline_seconds": 300,
+  "fault_seconds": 300,
+  "recovery_seconds": 300,
+  "flag_restored": true,
+  "locust_users_start": 5,
+  "locust_requests": 632,
+  "locust_failures": 32,
+  "locust_users_end": 5,
+  "flag_reset_at": "2026-11-07T02:27:01.123543+00:00",
+  "logs": {
+    "exists": true,
+    "size_bytes": 11629685,
+    "valid_lines": 3383,
+    "invalid_lines": 0
+  },
+  "metrics": {
+    "exists": true,
+    "size_bytes": 41739373,
+    "valid_lines": 817,
+    "invalid_lines": 0
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "metadata_schema_version": 3,
+  "run_id": "precheck_payment_unreachable_001",
+  "scenario": "fault",
+  "warmup_seconds": 180,
+  "duration_seconds": 900,
+  "collector_started_at": "2026-11-07T01:48:55.878846+00:00",
+  "observation_started_at": "2026-11-07T01:51:56.109098+00:00",
+  "observation_ended_at": "2026-11-07T02:06:56.696615+00:00",
+  "collector_stopped_at": "2026-11-07T02:06:58.770117+00:00",
+  "collector_restored": true,
+  "status": "completed",
+  "phases": {
+    "normal": {
+      "start": "2026-11-07T01:51:56.109798+00:00",
+      "end": "2026-11-07T01:56:56.101695+00:00"
+    },
+    "fault": {
+      "switch_requested_at": "2026-11-07T01:56:56.104359+00:00",
+      "switch_confirmed_at": "2026-11-07T01:56:56.521691+00:00",
+      "file_confirmed_at": "2026-11-07T01:56:56.521691+00:00",
+      "start": "2026-11-07T01:56:56.521691+00:00",
+      "start_boundary_basis": "file_confirmed_not_service_applied",
+      "end_requested_at": "2026-11-07T02:01:56.511052+00:00",
+      "end": "2026-11-07T02:01:56.702012+00:00"
+    },
+    "recovery": {
+      "start": "2026-11-07T02:01:56.702012+00:00",
+      "start_boundary_basis": "file_confirmed_not_service_applied",
+      "end": "2026-11-07T02:06:56.695516+00:00"
+    }
+  },
+  "switch_events": [
+    {
+      "flag": "paymentUnreachable",
+      "requested_variant": "on",
+      "requested_at": "2026-11-07T01:56:56.104359+00:00",
+      "file_confirmed_at": "2026-11-07T01:56:56.521691+00:00",
+      "file_status": "confirmed",
+      "service_applied": "unknown"
+    },
+    {
+      "flag": "paymentUnreachable",
+      "requested_variant": "off",
+      "requested_at": "2026-11-07T02:01:56.511052+00:00",
+      "file_confirmed_at": "2026-11-07T02:01:56.702012+00:00",
+      "file_status": "confirmed",
+      "service_applied": "unknown"
+    },
+    {
+      "flag": "paymentUnreachable",
+      "requested_variant": "off",
+      "requested_at": "2026-11-07T02:06:56.924955+00:00",
+      "file_confirmed_at": "2026-11-07T02:06:57.236526+00:00",
+      "file_status": "confirmed",
+      "service_applied": "unknown"
+    }
+  ],
+  "fault_flag": "paymentUnreachable",
+  "fault_variant": "on",
+  "root_service": "payment",
+  "baseline_seconds": 300,
+  "fault_seconds": 300,
+  "recovery_seconds": 300,
+  "flag_restored": true,
+  "locust_users_start": 5,
+  "locust_requests": 809,
+  "locust_failures": 18,
+  "locust_users_end": 5,
+  "flag_reset_at": "2026-11-07T02:06:57.236526+00:00",
+  "logs": {
+    "exists": true,
+    "size_bytes": 13209157,
+    "valid_lines": 3844,
+    "invalid_lines": 0
+  },
+  "metrics": {
+    "exists": true,
+    "size_bytes": 41790713,
+    "valid_lines": 816,
+    "invalid_lines": 0
+  }
+}

@@ -1,0 +1,322 @@
+{
+  "test_auto_normal_001": {
+    "outside/otelcol-contrib": [
+      [
+        "Error scraping metrics",
+        2
+      ]
+    ],
+    "outside/load-generator": [
+      [
+        "Transient error StatusCode.UNAVAILABLE encountered while exporting logs to otel-collector:4317, retrying in 0.82s. Error details: failed to connect to all addre",
+        2
+      ],
+      [
+        "Transient error StatusCode.UNAVAILABLE encountered while exporting logs to otel-collector:4317, retrying in 4.18s. Error details: failed to connect to all addre",
+        2
+      ]
+    ],
+    "outside/ad": [
+      [
+        "Transport failed",
+        1
+      ]
+    ]
+  },
+  "test_auto_normal_002": {
+    "outside/load-generator": [
+      [
+        "Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 0.84s. Error details: failed to connect to all add",
+        2
+      ]
+    ],
+    "outside/otelcol-contrib": [
+      [
+        "Error scraping metrics",
+        1
+      ]
+    ],
+    "outside/ad": [
+      [
+        "Transport failed",
+        1
+      ]
+    ]
+  },
+  "test_auto_normal_003": {
+    "outside/load-generator": [
+      [
+        "Transient error StatusCode.UNAVAILABLE encountered while exporting metrics to otel-collector:4317, retrying in 1.09s. Error details: failed to connect to all ad",
+        2
+      ]
+    ]
+  },
+  "test_fault_ad_cpu_001": {
+    "outside/load-generator": [
+      [
+        "Transient error StatusCode.UNAVAILABLE encountered while exporting logs to otel-collector:4317, retrying in 1.14s. Error details: failed to connect to all addre",
+        2
+      ]
+    ],
+    "outside/ad": [
+      [
+        "Transport failed",
+        1
+      ]
+    ]
+  },
+  "test_fault_ad_cpu_002": {
+    "outside/load-generator": [
+      [
+        "Transient error StatusCode.UNAVAILABLE encountered while exporting logs to otel-collector:4317, retrying in 0.85s. Error details: failed to connect to all addre",
+        2
+      ]
+    ],
+    "normal/otelcol-contrib": [
+      [
+        "Error scraping metrics",
+        2
+      ]
+    ],
+    "fault/ad": [
+      [
+        "Transport failed",
+        3
+      ]
+    ],
+    "recovery/ad": [
+      [
+        "Transport failed",
+        1
+      ]
+    ]
+  },
+  "test_fault_ad_cpu_003": {
+    "outside/load-generator": [
+      [
+        "Transient error StatusCode.UNAVAILABLE encountered while exporting logs to otel-collector:4317, retrying in 0.90s. Error details: failed to connect to all addre",
+        2
+      ]
+    ],
+    "normal/otelcol-contrib": [
+      [
+        "Error scraping metrics",
+        1
+      ]
+    ],
+    "fault/ad": [
+      [
+        "Transport failed",
+        14
+      ]
+    ],
+    "fault/otelcol-contrib": [
+      [
+        "Error scraping metrics",
+        2
+      ]
+    ],
+    "recovery/otelcol-contrib": [
+      [
+        "Error scraping metrics",
+        1
+      ]
+    ]
+  },
+  "test_fault_ad_failure_001": {
+    "outside/load-generator": [
+      [
+        "Transient error StatusCode.UNAVAILABLE encountered while exporting logs to otel-collector:4317, retrying in 0.91s. Error details: failed to connect to all addre",
+        2
+      ]
+    ],
+    "normal/otelcol-contrib": [
+      [
+        "Error scraping metrics",
+        1
+      ]
+    ],
+    "fault/ad": [
+      [
+        "GetAds Failed with status Status{code=UNAVAILABLE, description=null, cause=null}",
+        5
+      ],
+      [
+        "Transport failed",
+        1
+      ]
+    ],
+    "fault/frontend": [
+      [
+        "API request failed",
+        5
+      ]
+    ],
+    "fault/otelcol-contrib": [
+      [
+        "Error scraping metrics",
+        2
+      ]
+    ],
+    "recovery/otelcol-contrib": [
+      [
+        "Error scraping metrics",
+        2
+      ]
+    ],
+    "recovery/ad": [
+      [
+        "Transport failed",
+        1
+      ]
+    ]
+  },
+  "test_fault_catalog_lock_001": {
+    "outside/load-generator": [
+      [
+        "Transient error StatusCode.UNAVAILABLE encountered while exporting logs to otel-collector:4317, retrying in 1.19s. Error details: failed to connect to all addre",
+        2
+      ]
+    ],
+    "fault/product-catalog": [
+      [
+        "lock contention scenario active: holding ACCESS EXCLUSIVE lock on catalog.products",
+        3
+      ]
+    ],
+    "fault/load-generator": [
+      [
+        "Error in add to cart task: Timeout 15000ms exceeded while waiting for event \"response\"\n=========================== logs ===========================\nwaiting for ",
+        6
+      ]
+    ],
+    "recovery/ad": [
+      [
+        "Transport failed",
+        1
+      ]
+    ]
+  },
+  "test_fault_payment_001": {
+    "outside/otelcol-contrib": [
+      [
+        "Error scraping metrics",
+        1
+      ]
+    ],
+    "outside/load-generator": [
+      [
+        "Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 0.88s. Error details: failed to connect to all add",
+        2
+      ]
+    ],
+    "fault/payment": [
+      [
+        "Payment request failed. Invalid token. demo.user_context.loyalty_level=gold",
+        6
+      ]
+    ],
+    "fault/ad": [
+      [
+        "Transport failed",
+        1
+      ]
+    ]
+  },
+  "test_fault_payment_unreachable_001": {
+    "outside/load-generator": [
+      [
+        "Transient error StatusCode.UNAVAILABLE encountered while exporting traces to otel-collector:4317, retrying in 0.85s. Error details: failed to connect to all add",
+        2
+      ],
+      [
+        "Transient error StatusCode.UNAVAILABLE encountered while exporting logs to otel-collector:4317, retrying in 1.67s. Error details: failed to connect to all addre",
+        2
+      ]
+    ],
+    "normal/load-generator": [
+      [
+        "Error in add to cart task: Timeout 15000ms exceeded while waiting for event \"response\"\n=========================== logs ===========================\nwaiting for ",
+        4
+      ]
+    ],
+    "normal/otelcol-contrib": [
+      [
+        "Error scraping metrics",
+        1
+      ]
+    ],
+    "fault/frontend": [
+      [
+        "Checkout failed to place order",
+        8
+      ]
+    ],
+    "fault/otelcol-contrib": [
+      [
+        "Error scraping metrics",
+        1
+      ]
+    ],
+    "fault/load-generator": [
+      [
+        "Error in add to cart task: Timeout 15000ms exceeded while waiting for event \"response\"\n=========================== logs ===========================\nwaiting for ",
+        4
+      ]
+    ],
+    "recovery/frontend": [
+      [
+        "Checkout failed to place order",
+        2
+      ]
+    ]
+  },
+  "test_fault_shipping_slowdown_001": {
+    "outside/load-generator": [
+      [
+        "Transient error StatusCode.UNAVAILABLE encountered while exporting logs to otel-collector:4317, retrying in 1.15s. Error details: failed to connect to all addre",
+        2
+      ],
+      [
+        "Error in add to cart task: Timeout 15000ms exceeded while waiting for event \"response\"\n=========================== logs ===========================\nwaiting for ",
+        2
+      ]
+    ],
+    "normal/load-generator": [
+      [
+        "Error in add to cart task: Timeout 15000ms exceeded while waiting for event \"response\"\n=========================== logs ===========================\nwaiting for ",
+        8
+      ]
+    ],
+    "normal/otelcol-contrib": [
+      [
+        "Error scraping metrics",
+        1
+      ]
+    ],
+    "fault/load-generator": [
+      [
+        "Error in add to cart task: Timeout 15000ms exceeded while waiting for event \"response\"\n=========================== logs ===========================\nwaiting for ",
+        6
+      ]
+    ],
+    "fault/otelcol-contrib": [
+      [
+        "Error scraping metrics",
+        2
+      ]
+    ],
+    "recovery/otelcol-contrib": [
+      [
+        "Error scraping metrics",
+        2
+      ]
+    ],
+    "recovery/load-generator": [
+      [
+        "Error in add to cart task: Timeout 15000ms exceeded while waiting for event \"response\"\n=========================== logs ===========================\nwaiting for ",
+        2
+      ]
+    ]
+  }
+}

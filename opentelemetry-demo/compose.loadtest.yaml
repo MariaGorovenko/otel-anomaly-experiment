@@ -1,0 +1,4 @@
+services:
+  load-generator:
+    volumes:
+      - ./experiment/locust/locustfile.py:/usr/src/app/locustfile.py:ro

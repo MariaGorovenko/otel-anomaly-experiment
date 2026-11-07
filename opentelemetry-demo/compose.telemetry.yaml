@@ -1,0 +1,10 @@
+services:
+  otel-collector:
+    volumes:
+      - ./src/otel-collector/otelcol-config-experiment.yml:/etc/otelcol-config-experiment.yml:ro
+      - ../data/raw/pilot:/experiment-data
+    command:
+      - --config=/etc/otelcol-config.yml
+      - --config=/etc/otelcol-config-extras.yml
+      - --config=/etc/otelcol-config-experiment.yml
+      - --feature-gates=service.profilesSupport

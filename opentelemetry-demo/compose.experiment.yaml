@@ -1,0 +1,28 @@
+services:
+  recommendation:
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - wget -q -O /dev/null http://localhost:9001/ || exit 1
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 10s
+
+  payment:
+    healthcheck:
+      test:
+        - CMD
+        - /nodejs/bin/node
+        - -e
+        - >-
+          const net=require('net');
+          const c=new net.Socket();
+          c.setTimeout(2000);
+          c.connect(50051,'127.0.0.1',()=>{c.destroy();process.exit(0)});
+          c.on('error',()=>process.exit(1));
+          c.on('timeout',()=>process.exit(1));
+      interval: 15s
+      timeout: 20s
+      retries: 10
+      start_period: 30s

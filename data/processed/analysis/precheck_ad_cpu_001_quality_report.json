@@ -1,0 +1,694 @@
+[
+  {
+    "run_id": "precheck_ad_cpu_001",
+    "status": "completed",
+    "flag": "adHighCpu",
+    "phases_present": [
+      "normal",
+      "fault",
+      "recovery"
+    ],
+    "locust_requests": 824,
+    "locust_failures": 0,
+    "signals": {
+      "logs": {
+        "total_records_or_points": 12109,
+        "by_phase": {
+          "outside": 2287,
+          "normal": 3189,
+          "fault": 3296,
+          "recovery": 3337
+        },
+        "by_service": {
+          "ad": {
+            "outside": 12,
+            "normal": 17,
+            "fault": 72,
+            "recovery": 29
+          },
+          "cart": {
+            "outside": 156,
+            "normal": 165,
+            "fault": 175,
+            "recovery": 202
+          },
+          "checkout": {
+            "outside": 64,
+            "normal": 52,
+            "fault": 72,
+            "recovery": 76
+          },
+          "currency": {
+            "outside": 81,
+            "normal": 74,
+            "fault": 85,
+            "recovery": 89
+          },
+          "email": {
+            "outside": 16,
+            "normal": 13,
+            "fault": 18,
+            "recovery": 19
+          },
+          "frontend": {
+            "outside": 246,
+            "normal": 335,
+            "fault": 337,
+            "recovery": 358
+          },
+          "frontend-proxy": {
+            "outside": 505,
+            "normal": 792,
+            "fault": 800,
+            "recovery": 825
+          },
+          "load-generator": {
+            "outside": 296,
+            "normal": 454,
+            "fault": 440,
+            "recovery": 458
+          },
+          "otelcol-contrib": {
+            "outside": 511,
+            "normal": 804,
+            "fault": 805,
+            "recovery": 804
+          },
+          "payment": {
+            "outside": 32,
+            "normal": 26,
+            "fault": 36,
+            "recovery": 38
+          },
+          "product-catalog": {
+            "outside": 303,
+            "normal": 402,
+            "fault": 382,
+            "recovery": 360
+          },
+          "quote": {
+            "outside": 16,
+            "normal": 13,
+            "fault": 18,
+            "recovery": 19
+          },
+          "shipping": {
+            "outside": 49,
+            "normal": 42,
+            "fault": 56,
+            "recovery": 60
+          }
+        },
+        "timestamp_gaps": {
+          "load-generator/normal": {
+            "unique_timestamps": 227,
+            "median_gap_seconds": 1.12,
+            "max_gap_seconds": 7.12
+          },
+          "frontend-proxy/normal": {
+            "unique_timestamps": 791,
+            "median_gap_seconds": 0.03,
+            "max_gap_seconds": 5.07
+          },
+          "otelcol-contrib/normal": {
+            "unique_timestamps": 803,
+            "median_gap_seconds": 0.14,
+            "max_gap_seconds": 6.77
+          },
+          "product-catalog/normal": {
+            "unique_timestamps": 402,
+            "median_gap_seconds": 0.05,
+            "max_gap_seconds": 7.22
+          },
+          "frontend/normal": {
+            "unique_timestamps": 333,
+            "median_gap_seconds": 0.28,
+            "max_gap_seconds": 7.03
+          },
+          "cart/normal": {
+            "unique_timestamps": 165,
+            "median_gap_seconds": 0.11,
+            "max_gap_seconds": 22.02
+          },
+          "quote/normal": {
+            "unique_timestamps": 13,
+            "median_gap_seconds": 18.83,
+            "max_gap_seconds": 72.62
+          },
+          "shipping/normal": {
+            "unique_timestamps": 42,
+            "median_gap_seconds": 0.06,
+            "max_gap_seconds": 72.52
+          },
+          "email/normal": {
+            "unique_timestamps": 13,
+            "median_gap_seconds": 18.85,
+            "max_gap_seconds": 72.61
+          },
+          "currency/normal": {
+            "unique_timestamps": 74,
+            "median_gap_seconds": 0.09,
+            "max_gap_seconds": 25.69
+          },
+          "checkout/normal": {
+            "unique_timestamps": 52,
+            "median_gap_seconds": 0.05,
+            "max_gap_seconds": 72.44
+          },
+          "payment/normal": {
+            "unique_timestamps": 22,
+            "median_gap_seconds": 3.08,
+            "max_gap_seconds": 72.61
+          },
+          "ad/normal": {
+            "unique_timestamps": 17,
+            "median_gap_seconds": 13.36,
+            "max_gap_seconds": 47.33
+          },
+          "otelcol-contrib/fault": {
+            "unique_timestamps": 804,
+            "median_gap_seconds": 0.13,
+            "max_gap_seconds": 6.46
+          },
+          "frontend-proxy/fault": {
+            "unique_timestamps": 800,
+            "median_gap_seconds": 0.03,
+            "max_gap_seconds": 5.07
+          },
+          "product-catalog/fault": {
+            "unique_timestamps": 382,
+            "median_gap_seconds": 0.06,
+            "max_gap_seconds": 9.45
+          },
+          "load-generator/fault": {
+            "unique_timestamps": 220,
+            "median_gap_seconds": 1.05,
+            "max_gap_seconds": 6.8
+          },
+          "frontend/fault": {
+            "unique_timestamps": 328,
+            "median_gap_seconds": 0.31,
+            "max_gap_seconds": 6.83
+          },
+          "ad/fault": {
+            "unique_timestamps": 72,
+            "median_gap_seconds": 2.37,
+            "max_gap_seconds": 30.27
+          },
+          "cart/fault": {
+            "unique_timestamps": 175,
+            "median_gap_seconds": 0.09,
+            "max_gap_seconds": 21.58
+          },
+          "currency/fault": {
+            "unique_timestamps": 85,
+            "median_gap_seconds": 0.15,
+            "max_gap_seconds": 24.21
+          },
+          "checkout/fault": {
+            "unique_timestamps": 72,
+            "median_gap_seconds": 0.08,
+            "max_gap_seconds": 31.7
+          },
+          "shipping/fault": {
+            "unique_timestamps": 56,
+            "median_gap_seconds": 0.06,
+            "max_gap_seconds": 32.12
+          },
+          "email/fault": {
+            "unique_timestamps": 18,
+            "median_gap_seconds": 12.39,
+            "max_gap_seconds": 32.55
+          },
+          "quote/fault": {
+            "unique_timestamps": 18,
+            "median_gap_seconds": 12.57,
+            "max_gap_seconds": 32.84
+          },
+          "payment/fault": {
+            "unique_timestamps": 32,
+            "median_gap_seconds": 1.5,
+            "max_gap_seconds": 32.82
+          },
+          "frontend-proxy/recovery": {
+            "unique_timestamps": 825,
+            "median_gap_seconds": 0.03,
+            "max_gap_seconds": 4.72
+          },
+          "otelcol-contrib/recovery": {
+            "unique_timestamps": 804,
+            "median_gap_seconds": 0.13,
+            "max_gap_seconds": 5.69
+          },
+          "ad/recovery": {
+            "unique_timestamps": 29,
+            "median_gap_seconds": 7.76,
+            "max_gap_seconds": 40.8
+          },
+          "load-generator/recovery": {
+            "unique_timestamps": 229,
+            "median_gap_seconds": 0.97,
+            "max_gap_seconds": 6.28
+          },
+          "frontend/recovery": {
+            "unique_timestamps": 351,
+            "median_gap_seconds": 0.18,
+            "max_gap_seconds": 6.34
+          },
+          "product-catalog/recovery": {
+            "unique_timestamps": 360,
+            "median_gap_seconds": 0.06,
+            "max_gap_seconds": 8.13
+          },
+          "cart/recovery": {
+            "unique_timestamps": 202,
+            "median_gap_seconds": 0.05,
+            "max_gap_seconds": 18.62
+          },
+          "currency/recovery": {
+            "unique_timestamps": 89,
+            "median_gap_seconds": 0.11,
+            "max_gap_seconds": 23.61
+          },
+          "checkout/recovery": {
+            "unique_timestamps": 76,
+            "median_gap_seconds": 0.07,
+            "max_gap_seconds": 43.13
+          },
+          "shipping/recovery": {
+            "unique_timestamps": 60,
+            "median_gap_seconds": 0.07,
+            "max_gap_seconds": 43.23
+          },
+          "quote/recovery": {
+            "unique_timestamps": 19,
+            "median_gap_seconds": 10.29,
+            "max_gap_seconds": 43.39
+          },
+          "payment/recovery": {
+            "unique_timestamps": 34,
+            "median_gap_seconds": 2.01,
+            "max_gap_seconds": 43.38
+          },
+          "email/recovery": {
+            "unique_timestamps": 19,
+            "median_gap_seconds": 10.31,
+            "max_gap_seconds": 43.46
+          }
+        }
+      },
+      "metrics": {
+        "total_records_or_points": 103063,
+        "by_phase": {
+          "outside": 18516,
+          "normal": 28163,
+          "fault": 28180,
+          "recovery": 28204
+        },
+        "by_service": {
+          "ad": {
+            "outside": 444,
+            "normal": 762,
+            "fault": 790,
+            "recovery": 790
+          },
+          "cart": {
+            "outside": 252,
+            "normal": 420,
+            "fault": 420,
+            "recovery": 420
+          },
+          "checkout": {
+            "outside": 177,
+            "normal": 295,
+            "fault": 295,
+            "recovery": 295
+          },
+          "currency": {
+            "outside": 21,
+            "normal": 35,
+            "fault": 35,
+            "recovery": 35
+          },
+          "email": {
+            "outside": 21,
+            "normal": 35,
+            "fault": 35,
+            "recovery": 35
+          },
+          "flagd": {
+            "outside": 98,
+            "normal": 172,
+            "fault": 190,
+            "recovery": 190
+          },
+          "frontend": {
+            "outside": 411,
+            "normal": 705,
+            "fault": 705,
+            "recovery": 705
+          },
+          "frontend-proxy": {
+            "outside": 30,
+            "normal": 50,
+            "fault": 50,
+            "recovery": 50
+          },
+          "frontend-web": {
+            "outside": 26,
+            "normal": 50,
+            "fault": 50,
+            "recovery": 50
+          },
+          "image-provider": {
+            "outside": 12,
+            "normal": 20,
+            "fault": 20,
+            "recovery": 20
+          },
+          "load-generator": {
+            "outside": 1385,
+            "normal": 2320,
+            "fault": 2320,
+            "recovery": 2320
+          },
+          "otelcol-contrib": {
+            "outside": 351,
+            "normal": 585,
+            "fault": 585,
+            "recovery": 585
+          },
+          "payment": {
+            "outside": 237,
+            "normal": 415,
+            "fault": 415,
+            "recovery": 415
+          },
+          "product-catalog": {
+            "outside": 165,
+            "normal": 275,
+            "fault": 275,
+            "recovery": 275
+          },
+          "quote": {
+            "outside": 140,
+            "normal": 239,
+            "fault": 240,
+            "recovery": 240
+          },
+          "shipping": {
+            "outside": 45,
+            "normal": 75,
+            "fault": 75,
+            "recovery": 75
+          },
+          "telemetry-docs": {
+            "outside": 6,
+            "normal": 10,
+            "fault": 10,
+            "recovery": 10
+          },
+          "unknown": {
+            "outside": 14695,
+            "normal": 21700,
+            "fault": 21670,
+            "recovery": 21694
+          }
+        },
+        "timestamp_gaps": {
+          "unknown/normal": {
+            "unique_timestamps": 1118,
+            "median_gap_seconds": 0.0,
+            "max_gap_seconds": 9.65
+          },
+          "ad/normal": {
+            "unique_timestamps": 40,
+            "median_gap_seconds": 10.0,
+            "max_gap_seconds": 10.0
+          },
+          "cart/normal": {
+            "unique_timestamps": 127,
+            "median_gap_seconds": 0.0,
+            "max_gap_seconds": 55.05
+          },
+          "payment/normal": {
+            "unique_timestamps": 10,
+            "median_gap_seconds": 51.22,
+            "max_gap_seconds": 51.22
+          },
+          "email/normal": {
+            "unique_timestamps": 10,
+            "median_gap_seconds": 49.41,
+            "max_gap_seconds": 49.43
+          },
+          "checkout/normal": {
+            "unique_timestamps": 157,
+            "median_gap_seconds": 0.0,
+            "max_gap_seconds": 34.72
+          },
+          "frontend/normal": {
+            "unique_timestamps": 10,
+            "median_gap_seconds": 17.84,
+            "max_gap_seconds": 42.17
+          },
+          "product-catalog/normal": {
+            "unique_timestamps": 182,
+            "median_gap_seconds": 0.0,
+            "max_gap_seconds": 52.91
+          },
+          "load-generator/normal": {
+            "unique_timestamps": 10,
+            "median_gap_seconds": 7.23,
+            "max_gap_seconds": 53.35
+          },
+          "shipping/normal": {
+            "unique_timestamps": 30,
+            "median_gap_seconds": 0.0,
+            "max_gap_seconds": 56.99
+          },
+          "currency/normal": {
+            "unique_timestamps": 10,
+            "median_gap_seconds": 2.6,
+            "max_gap_seconds": 57.4
+          },
+          "quote/normal": {
+            "unique_timestamps": 10,
+            "median_gap_seconds": 2.29,
+            "max_gap_seconds": 57.73
+          },
+          "otelcol-contrib/normal": {
+            "unique_timestamps": 142,
+            "median_gap_seconds": 0.0,
+            "max_gap_seconds": 60.0
+          },
+          "frontend-web/normal": {
+            "unique_timestamps": 5,
+            "median_gap_seconds": 60.0,
+            "max_gap_seconds": 60.0
+          },
+          "frontend-proxy/normal": {
+            "unique_timestamps": 5,
+            "median_gap_seconds": 60.0,
+            "max_gap_seconds": 60.0
+          },
+          "flagd/normal": {
+            "unique_timestamps": 5,
+            "median_gap_seconds": 60.0,
+            "max_gap_seconds": 60.0
+          },
+          "image-provider/normal": {
+            "unique_timestamps": 5,
+            "median_gap_seconds": 60.0,
+            "max_gap_seconds": 60.0
+          },
+          "telemetry-docs/normal": {
+            "unique_timestamps": 5,
+            "median_gap_seconds": 60.0,
+            "max_gap_seconds": 60.0
+          },
+          "unknown/fault": {
+            "unique_timestamps": 1112,
+            "median_gap_seconds": 0.0,
+            "max_gap_seconds": 9.65
+          },
+          "ad/fault": {
+            "unique_timestamps": 40,
+            "median_gap_seconds": 9.99,
+            "max_gap_seconds": 10.0
+          },
+          "cart/fault": {
+            "unique_timestamps": 127,
+            "median_gap_seconds": 0.0,
+            "max_gap_seconds": 55.05
+          },
+          "payment/fault": {
+            "unique_timestamps": 10,
+            "median_gap_seconds": 51.21,
+            "max_gap_seconds": 51.22
+          },
+          "email/fault": {
+            "unique_timestamps": 10,
+            "median_gap_seconds": 49.38,
+            "max_gap_seconds": 49.4
+          },
+          "checkout/fault": {
+            "unique_timestamps": 158,
+            "median_gap_seconds": 0.0,
+            "max_gap_seconds": 34.71
+          },
+          "frontend/fault": {
+            "unique_timestamps": 10,
+            "median_gap_seconds": 17.83,
+            "max_gap_seconds": 42.17
+          },
+          "product-catalog/fault": {
+            "unique_timestamps": 182,
+            "median_gap_seconds": 0.0,
+            "max_gap_seconds": 52.9
+          },
+          "load-generator/fault": {
+            "unique_timestamps": 10,
+            "median_gap_seconds": 6.46,
+            "max_gap_seconds": 54.52
+          },
+          "shipping/fault": {
+            "unique_timestamps": 30,
+            "median_gap_seconds": 0.0,
+            "max_gap_seconds": 56.99
+          },
+          "currency/fault": {
+            "unique_timestamps": 10,
+            "median_gap_seconds": 2.59,
+            "max_gap_seconds": 57.41
+          },
+          "quote/fault": {
+            "unique_timestamps": 10,
+            "median_gap_seconds": 2.26,
+            "max_gap_seconds": 57.79
+          },
+          "otelcol-contrib/fault": {
+            "unique_timestamps": 134,
+            "median_gap_seconds": 0.0,
+            "max_gap_seconds": 60.0
+          },
+          "frontend-web/fault": {
+            "unique_timestamps": 5,
+            "median_gap_seconds": 60.0,
+            "max_gap_seconds": 60.0
+          },
+          "frontend-proxy/fault": {
+            "unique_timestamps": 5,
+            "median_gap_seconds": 60.0,
+            "max_gap_seconds": 60.0
+          },
+          "flagd/fault": {
+            "unique_timestamps": 5,
+            "median_gap_seconds": 60.0,
+            "max_gap_seconds": 60.0
+          },
+          "image-provider/fault": {
+            "unique_timestamps": 5,
+            "median_gap_seconds": 60.0,
+            "max_gap_seconds": 60.0
+          },
+          "telemetry-docs/fault": {
+            "unique_timestamps": 5,
+            "median_gap_seconds": 60.0,
+            "max_gap_seconds": 60.0
+          },
+          "unknown/recovery": {
+            "unique_timestamps": 1116,
+            "median_gap_seconds": 0.0,
+            "max_gap_seconds": 9.65
+          },
+          "ad/recovery": {
+            "unique_timestamps": 40,
+            "median_gap_seconds": 10.0,
+            "max_gap_seconds": 10.0
+          },
+          "cart/recovery": {
+            "unique_timestamps": 130,
+            "median_gap_seconds": 0.0,
+            "max_gap_seconds": 55.05
+          },
+          "payment/recovery": {
+            "unique_timestamps": 10,
+            "median_gap_seconds": 51.21,
+            "max_gap_seconds": 51.21
+          },
+          "email/recovery": {
+            "unique_timestamps": 10,
+            "median_gap_seconds": 49.36,
+            "max_gap_seconds": 49.38
+          },
+          "checkout/recovery": {
+            "unique_timestamps": 159,
+            "median_gap_seconds": 0.0,
+            "max_gap_seconds": 34.73
+          },
+          "frontend/recovery": {
+            "unique_timestamps": 10,
+            "median_gap_seconds": 17.83,
+            "max_gap_seconds": 42.17
+          },
+          "product-catalog/recovery": {
+            "unique_timestamps": 183,
+            "median_gap_seconds": 0.0,
+            "max_gap_seconds": 52.93
+          },
+          "load-generator/recovery": {
+            "unique_timestamps": 10,
+            "median_gap_seconds": 5.15,
+            "max_gap_seconds": 55.58
+          },
+          "shipping/recovery": {
+            "unique_timestamps": 30,
+            "median_gap_seconds": 0.0,
+            "max_gap_seconds": 56.99
+          },
+          "currency/recovery": {
+            "unique_timestamps": 10,
+            "median_gap_seconds": 2.59,
+            "max_gap_seconds": 57.41
+          },
+          "quote/recovery": {
+            "unique_timestamps": 10,
+            "median_gap_seconds": 2.25,
+            "max_gap_seconds": 57.79
+          },
+          "otelcol-contrib/recovery": {
+            "unique_timestamps": 143,
+            "median_gap_seconds": 0.0,
+            "max_gap_seconds": 60.0
+          },
+          "frontend-web/recovery": {
+            "unique_timestamps": 5,
+            "median_gap_seconds": 60.0,
+            "max_gap_seconds": 60.0
+          },
+          "frontend-proxy/recovery": {
+            "unique_timestamps": 5,
+            "median_gap_seconds": 60.0,
+            "max_gap_seconds": 60.0
+          },
+          "flagd/recovery": {
+            "unique_timestamps": 5,
+            "median_gap_seconds": 60.0,
+            "max_gap_seconds": 60.0
+          },
+          "image-provider/recovery": {
+            "unique_timestamps": 5,
+            "median_gap_seconds": 60.0,
+            "max_gap_seconds": 60.0
+          },
+          "telemetry-docs/recovery": {
+            "unique_timestamps": 5,
+            "median_gap_seconds": 60.0,
+            "max_gap_seconds": 60.0
+          }
+        }
+      }
+    },
+    "warnings": []
+  }
+]
