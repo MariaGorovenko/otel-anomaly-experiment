@@ -1,0 +1,8 @@
+{
+  "users_start": 5,
+  "users_end": 5,
+  "requests": 1954,
+  "failures": 0,
+  "average_rps": 1.085537102630963,
+  "failure_ratio": 0.0
+}

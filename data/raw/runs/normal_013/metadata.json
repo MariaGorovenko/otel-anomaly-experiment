@@ -1,0 +1,36 @@
+{
+  "metadata_schema_version": 3,
+  "run_id": "normal_013",
+  "scenario": "normal",
+  "warmup_seconds": 180,
+  "duration_seconds": 1800,
+  "collector_started_at": "2026-11-17T22:36:01.045657+00:00",
+  "observation_started_at": "2026-11-17T22:39:01.359586+00:00",
+  "observation_ended_at": "2026-11-17T23:09:01.349920+00:00",
+  "collector_stopped_at": "2026-11-17T23:09:02.565908+00:00",
+  "collector_restored": true,
+  "status": "completed",
+  "phases": {
+    "normal": {
+      "start": "2026-11-17T22:39:01.359586+00:00",
+      "end": "2026-11-17T23:09:01.343443+00:00"
+    }
+  },
+  "switch_events": [],
+  "locust_users_start": 5,
+  "locust_requests": 1889,
+  "locust_failures": 0,
+  "locust_users_end": 5,
+  "logs": {
+    "exists": true,
+    "size_bytes": 67105526,
+    "valid_lines": 11366,
+    "invalid_lines": 0
+  },
+  "metrics": {
+    "exists": true,
+    "size_bytes": 76615196,
+    "valid_lines": 1485,
+    "invalid_lines": 0
+  }
+}
