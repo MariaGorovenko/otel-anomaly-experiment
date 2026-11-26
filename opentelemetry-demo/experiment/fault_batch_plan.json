@@ -1,0 +1,714 @@
+{
+  "version": 1,
+  "seed": 20261122,
+  "protocol": {
+    "warmup": 180,
+    "baseline": 300,
+    "fault_duration": 600,
+    "recovery": 300,
+    "pause": 180,
+    "expected_locust_users": 5
+  },
+  "entries": [
+    {
+      "cycle": 1,
+      "position": 1,
+      "run_id": "fault_paymentFailure_001",
+      "flag": "paymentFailure",
+      "variant": "100%"
+    },
+    {
+      "cycle": 1,
+      "position": 2,
+      "run_id": "fault_adFailure_001",
+      "flag": "adFailure",
+      "variant": "on"
+    },
+    {
+      "cycle": 1,
+      "position": 3,
+      "run_id": "fault_productCatalogLockContention_001",
+      "flag": "productCatalogLockContention",
+      "variant": "on"
+    },
+    {
+      "cycle": 1,
+      "position": 4,
+      "run_id": "fault_adHighCpu_001",
+      "flag": "adHighCpu",
+      "variant": "on"
+    },
+    {
+      "cycle": 1,
+      "position": 5,
+      "run_id": "fault_paymentUnreachable_001",
+      "flag": "paymentUnreachable",
+      "variant": "on"
+    },
+    {
+      "cycle": 2,
+      "position": 1,
+      "run_id": "fault_paymentUnreachable_002",
+      "flag": "paymentUnreachable",
+      "variant": "on"
+    },
+    {
+      "cycle": 2,
+      "position": 2,
+      "run_id": "fault_paymentFailure_002",
+      "flag": "paymentFailure",
+      "variant": "100%"
+    },
+    {
+      "cycle": 2,
+      "position": 3,
+      "run_id": "fault_adFailure_002",
+      "flag": "adFailure",
+      "variant": "on"
+    },
+    {
+      "cycle": 2,
+      "position": 4,
+      "run_id": "fault_productCatalogLockContention_002",
+      "flag": "productCatalogLockContention",
+      "variant": "on"
+    },
+    {
+      "cycle": 2,
+      "position": 5,
+      "run_id": "fault_adHighCpu_002",
+      "flag": "adHighCpu",
+      "variant": "on"
+    },
+    {
+      "cycle": 3,
+      "position": 1,
+      "run_id": "fault_adFailure_003",
+      "flag": "adFailure",
+      "variant": "on"
+    },
+    {
+      "cycle": 3,
+      "position": 2,
+      "run_id": "fault_productCatalogLockContention_003",
+      "flag": "productCatalogLockContention",
+      "variant": "on"
+    },
+    {
+      "cycle": 3,
+      "position": 3,
+      "run_id": "fault_adHighCpu_003",
+      "flag": "adHighCpu",
+      "variant": "on"
+    },
+    {
+      "cycle": 3,
+      "position": 4,
+      "run_id": "fault_paymentUnreachable_003",
+      "flag": "paymentUnreachable",
+      "variant": "on"
+    },
+    {
+      "cycle": 3,
+      "position": 5,
+      "run_id": "fault_paymentFailure_003",
+      "flag": "paymentFailure",
+      "variant": "100%"
+    },
+    {
+      "cycle": 4,
+      "position": 1,
+      "run_id": "fault_adHighCpu_004",
+      "flag": "adHighCpu",
+      "variant": "on"
+    },
+    {
+      "cycle": 4,
+      "position": 2,
+      "run_id": "fault_paymentUnreachable_004",
+      "flag": "paymentUnreachable",
+      "variant": "on"
+    },
+    {
+      "cycle": 4,
+      "position": 3,
+      "run_id": "fault_paymentFailure_004",
+      "flag": "paymentFailure",
+      "variant": "100%"
+    },
+    {
+      "cycle": 4,
+      "position": 4,
+      "run_id": "fault_adFailure_004",
+      "flag": "adFailure",
+      "variant": "on"
+    },
+    {
+      "cycle": 4,
+      "position": 5,
+      "run_id": "fault_productCatalogLockContention_004",
+      "flag": "productCatalogLockContention",
+      "variant": "on"
+    },
+    {
+      "cycle": 5,
+      "position": 1,
+      "run_id": "fault_productCatalogLockContention_005",
+      "flag": "productCatalogLockContention",
+      "variant": "on"
+    },
+    {
+      "cycle": 5,
+      "position": 2,
+      "run_id": "fault_adHighCpu_005",
+      "flag": "adHighCpu",
+      "variant": "on"
+    },
+    {
+      "cycle": 5,
+      "position": 3,
+      "run_id": "fault_paymentUnreachable_005",
+      "flag": "paymentUnreachable",
+      "variant": "on"
+    },
+    {
+      "cycle": 5,
+      "position": 4,
+      "run_id": "fault_paymentFailure_005",
+      "flag": "paymentFailure",
+      "variant": "100%"
+    },
+    {
+      "cycle": 5,
+      "position": 5,
+      "run_id": "fault_adFailure_005",
+      "flag": "adFailure",
+      "variant": "on"
+    },
+    {
+      "cycle": 6,
+      "position": 1,
+      "run_id": "fault_productCatalogLockContention_006",
+      "flag": "productCatalogLockContention",
+      "variant": "on"
+    },
+    {
+      "cycle": 6,
+      "position": 2,
+      "run_id": "fault_paymentFailure_006",
+      "flag": "paymentFailure",
+      "variant": "100%"
+    },
+    {
+      "cycle": 6,
+      "position": 3,
+      "run_id": "fault_paymentUnreachable_006",
+      "flag": "paymentUnreachable",
+      "variant": "on"
+    },
+    {
+      "cycle": 6,
+      "position": 4,
+      "run_id": "fault_adFailure_006",
+      "flag": "adFailure",
+      "variant": "on"
+    },
+    {
+      "cycle": 6,
+      "position": 5,
+      "run_id": "fault_adHighCpu_006",
+      "flag": "adHighCpu",
+      "variant": "on"
+    },
+    {
+      "cycle": 7,
+      "position": 1,
+      "run_id": "fault_adHighCpu_007",
+      "flag": "adHighCpu",
+      "variant": "on"
+    },
+    {
+      "cycle": 7,
+      "position": 2,
+      "run_id": "fault_productCatalogLockContention_007",
+      "flag": "productCatalogLockContention",
+      "variant": "on"
+    },
+    {
+      "cycle": 7,
+      "position": 3,
+      "run_id": "fault_paymentFailure_007",
+      "flag": "paymentFailure",
+      "variant": "100%"
+    },
+    {
+      "cycle": 7,
+      "position": 4,
+      "run_id": "fault_paymentUnreachable_007",
+      "flag": "paymentUnreachable",
+      "variant": "on"
+    },
+    {
+      "cycle": 7,
+      "position": 5,
+      "run_id": "fault_adFailure_007",
+      "flag": "adFailure",
+      "variant": "on"
+    },
+    {
+      "cycle": 8,
+      "position": 1,
+      "run_id": "fault_paymentUnreachable_008",
+      "flag": "paymentUnreachable",
+      "variant": "on"
+    },
+    {
+      "cycle": 8,
+      "position": 2,
+      "run_id": "fault_adFailure_008",
+      "flag": "adFailure",
+      "variant": "on"
+    },
+    {
+      "cycle": 8,
+      "position": 3,
+      "run_id": "fault_adHighCpu_008",
+      "flag": "adHighCpu",
+      "variant": "on"
+    },
+    {
+      "cycle": 8,
+      "position": 4,
+      "run_id": "fault_productCatalogLockContention_008",
+      "flag": "productCatalogLockContention",
+      "variant": "on"
+    },
+    {
+      "cycle": 8,
+      "position": 5,
+      "run_id": "fault_paymentFailure_008",
+      "flag": "paymentFailure",
+      "variant": "100%"
+    },
+    {
+      "cycle": 9,
+      "position": 1,
+      "run_id": "fault_paymentFailure_009",
+      "flag": "paymentFailure",
+      "variant": "100%"
+    },
+    {
+      "cycle": 9,
+      "position": 2,
+      "run_id": "fault_paymentUnreachable_009",
+      "flag": "paymentUnreachable",
+      "variant": "on"
+    },
+    {
+      "cycle": 9,
+      "position": 3,
+      "run_id": "fault_adFailure_009",
+      "flag": "adFailure",
+      "variant": "on"
+    },
+    {
+      "cycle": 9,
+      "position": 4,
+      "run_id": "fault_adHighCpu_009",
+      "flag": "adHighCpu",
+      "variant": "on"
+    },
+    {
+      "cycle": 9,
+      "position": 5,
+      "run_id": "fault_productCatalogLockContention_009",
+      "flag": "productCatalogLockContention",
+      "variant": "on"
+    },
+    {
+      "cycle": 10,
+      "position": 1,
+      "run_id": "fault_adFailure_010",
+      "flag": "adFailure",
+      "variant": "on"
+    },
+    {
+      "cycle": 10,
+      "position": 2,
+      "run_id": "fault_adHighCpu_010",
+      "flag": "adHighCpu",
+      "variant": "on"
+    },
+    {
+      "cycle": 10,
+      "position": 3,
+      "run_id": "fault_productCatalogLockContention_010",
+      "flag": "productCatalogLockContention",
+      "variant": "on"
+    },
+    {
+      "cycle": 10,
+      "position": 4,
+      "run_id": "fault_paymentFailure_010",
+      "flag": "paymentFailure",
+      "variant": "100%"
+    },
+    {
+      "cycle": 10,
+      "position": 5,
+      "run_id": "fault_paymentUnreachable_010",
+      "flag": "paymentUnreachable",
+      "variant": "on"
+    },
+    {
+      "cycle": 11,
+      "position": 1,
+      "run_id": "fault_adHighCpu_011",
+      "flag": "adHighCpu",
+      "variant": "on"
+    },
+    {
+      "cycle": 11,
+      "position": 2,
+      "run_id": "fault_adFailure_011",
+      "flag": "adFailure",
+      "variant": "on"
+    },
+    {
+      "cycle": 11,
+      "position": 3,
+      "run_id": "fault_productCatalogLockContention_011",
+      "flag": "productCatalogLockContention",
+      "variant": "on"
+    },
+    {
+      "cycle": 11,
+      "position": 4,
+      "run_id": "fault_paymentUnreachable_011",
+      "flag": "paymentUnreachable",
+      "variant": "on"
+    },
+    {
+      "cycle": 11,
+      "position": 5,
+      "run_id": "fault_paymentFailure_011",
+      "flag": "paymentFailure",
+      "variant": "100%"
+    },
+    {
+      "cycle": 12,
+      "position": 1,
+      "run_id": "fault_productCatalogLockContention_012",
+      "flag": "productCatalogLockContention",
+      "variant": "on"
+    },
+    {
+      "cycle": 12,
+      "position": 2,
+      "run_id": "fault_paymentUnreachable_012",
+      "flag": "paymentUnreachable",
+      "variant": "on"
+    },
+    {
+      "cycle": 12,
+      "position": 3,
+      "run_id": "fault_paymentFailure_012",
+      "flag": "paymentFailure",
+      "variant": "100%"
+    },
+    {
+      "cycle": 12,
+      "position": 4,
+      "run_id": "fault_adHighCpu_012",
+      "flag": "adHighCpu",
+      "variant": "on"
+    },
+    {
+      "cycle": 12,
+      "position": 5,
+      "run_id": "fault_adFailure_012",
+      "flag": "adFailure",
+      "variant": "on"
+    },
+    {
+      "cycle": 13,
+      "position": 1,
+      "run_id": "fault_adFailure_013",
+      "flag": "adFailure",
+      "variant": "on"
+    },
+    {
+      "cycle": 13,
+      "position": 2,
+      "run_id": "fault_productCatalogLockContention_013",
+      "flag": "productCatalogLockContention",
+      "variant": "on"
+    },
+    {
+      "cycle": 13,
+      "position": 3,
+      "run_id": "fault_paymentUnreachable_013",
+      "flag": "paymentUnreachable",
+      "variant": "on"
+    },
+    {
+      "cycle": 13,
+      "position": 4,
+      "run_id": "fault_paymentFailure_013",
+      "flag": "paymentFailure",
+      "variant": "100%"
+    },
+    {
+      "cycle": 13,
+      "position": 5,
+      "run_id": "fault_adHighCpu_013",
+      "flag": "adHighCpu",
+      "variant": "on"
+    },
+    {
+      "cycle": 14,
+      "position": 1,
+      "run_id": "fault_paymentUnreachable_014",
+      "flag": "paymentUnreachable",
+      "variant": "on"
+    },
+    {
+      "cycle": 14,
+      "position": 2,
+      "run_id": "fault_paymentFailure_014",
+      "flag": "paymentFailure",
+      "variant": "100%"
+    },
+    {
+      "cycle": 14,
+      "position": 3,
+      "run_id": "fault_adHighCpu_014",
+      "flag": "adHighCpu",
+      "variant": "on"
+    },
+    {
+      "cycle": 14,
+      "position": 4,
+      "run_id": "fault_adFailure_014",
+      "flag": "adFailure",
+      "variant": "on"
+    },
+    {
+      "cycle": 14,
+      "position": 5,
+      "run_id": "fault_productCatalogLockContention_014",
+      "flag": "productCatalogLockContention",
+      "variant": "on"
+    },
+    {
+      "cycle": 15,
+      "position": 1,
+      "run_id": "fault_paymentFailure_015",
+      "flag": "paymentFailure",
+      "variant": "100%"
+    },
+    {
+      "cycle": 15,
+      "position": 2,
+      "run_id": "fault_adHighCpu_015",
+      "flag": "adHighCpu",
+      "variant": "on"
+    },
+    {
+      "cycle": 15,
+      "position": 3,
+      "run_id": "fault_adFailure_015",
+      "flag": "adFailure",
+      "variant": "on"
+    },
+    {
+      "cycle": 15,
+      "position": 4,
+      "run_id": "fault_productCatalogLockContention_015",
+      "flag": "productCatalogLockContention",
+      "variant": "on"
+    },
+    {
+      "cycle": 15,
+      "position": 5,
+      "run_id": "fault_paymentUnreachable_015",
+      "flag": "paymentUnreachable",
+      "variant": "on"
+    },
+    {
+      "cycle": 16,
+      "position": 1,
+      "run_id": "fault_productCatalogLockContention_016",
+      "flag": "productCatalogLockContention",
+      "variant": "on"
+    },
+    {
+      "cycle": 16,
+      "position": 2,
+      "run_id": "fault_paymentFailure_016",
+      "flag": "paymentFailure",
+      "variant": "100%"
+    },
+    {
+      "cycle": 16,
+      "position": 3,
+      "run_id": "fault_paymentUnreachable_016",
+      "flag": "paymentUnreachable",
+      "variant": "on"
+    },
+    {
+      "cycle": 16,
+      "position": 4,
+      "run_id": "fault_adFailure_016",
+      "flag": "adFailure",
+      "variant": "on"
+    },
+    {
+      "cycle": 16,
+      "position": 5,
+      "run_id": "fault_adHighCpu_016",
+      "flag": "adHighCpu",
+      "variant": "on"
+    },
+    {
+      "cycle": 17,
+      "position": 1,
+      "run_id": "fault_adHighCpu_017",
+      "flag": "adHighCpu",
+      "variant": "on"
+    },
+    {
+      "cycle": 17,
+      "position": 2,
+      "run_id": "fault_productCatalogLockContention_017",
+      "flag": "productCatalogLockContention",
+      "variant": "on"
+    },
+    {
+      "cycle": 17,
+      "position": 3,
+      "run_id": "fault_paymentFailure_017",
+      "flag": "paymentFailure",
+      "variant": "100%"
+    },
+    {
+      "cycle": 17,
+      "position": 4,
+      "run_id": "fault_paymentUnreachable_017",
+      "flag": "paymentUnreachable",
+      "variant": "on"
+    },
+    {
+      "cycle": 17,
+      "position": 5,
+      "run_id": "fault_adFailure_017",
+      "flag": "adFailure",
+      "variant": "on"
+    },
+    {
+      "cycle": 18,
+      "position": 1,
+      "run_id": "fault_paymentFailure_018",
+      "flag": "paymentFailure",
+      "variant": "100%"
+    },
+    {
+      "cycle": 18,
+      "position": 2,
+      "run_id": "fault_paymentUnreachable_018",
+      "flag": "paymentUnreachable",
+      "variant": "on"
+    },
+    {
+      "cycle": 18,
+      "position": 3,
+      "run_id": "fault_adFailure_018",
+      "flag": "adFailure",
+      "variant": "on"
+    },
+    {
+      "cycle": 18,
+      "position": 4,
+      "run_id": "fault_adHighCpu_018",
+      "flag": "adHighCpu",
+      "variant": "on"
+    },
+    {
+      "cycle": 18,
+      "position": 5,
+      "run_id": "fault_productCatalogLockContention_018",
+      "flag": "productCatalogLockContention",
+      "variant": "on"
+    },
+    {
+      "cycle": 19,
+      "position": 1,
+      "run_id": "fault_paymentUnreachable_019",
+      "flag": "paymentUnreachable",
+      "variant": "on"
+    },
+    {
+      "cycle": 19,
+      "position": 2,
+      "run_id": "fault_adFailure_019",
+      "flag": "adFailure",
+      "variant": "on"
+    },
+    {
+      "cycle": 19,
+      "position": 3,
+      "run_id": "fault_adHighCpu_019",
+      "flag": "adHighCpu",
+      "variant": "on"
+    },
+    {
+      "cycle": 19,
+      "position": 4,
+      "run_id": "fault_productCatalogLockContention_019",
+      "flag": "productCatalogLockContention",
+      "variant": "on"
+    },
+    {
+      "cycle": 19,
+      "position": 5,
+      "run_id": "fault_paymentFailure_019",
+      "flag": "paymentFailure",
+      "variant": "100%"
+    },
+    {
+      "cycle": 20,
+      "position": 1,
+      "run_id": "fault_adFailure_020",
+      "flag": "adFailure",
+      "variant": "on"
+    },
+    {
+      "cycle": 20,
+      "position": 2,
+      "run_id": "fault_adHighCpu_020",
+      "flag": "adHighCpu",
+      "variant": "on"
+    },
+    {
+      "cycle": 20,
+      "position": 3,
+      "run_id": "fault_productCatalogLockContention_020",
+      "flag": "productCatalogLockContention",
+      "variant": "on"
+    },
+    {
+      "cycle": 20,
+      "position": 4,
+      "run_id": "fault_paymentFailure_020",
+      "flag": "paymentFailure",
+      "variant": "100%"
+    },
+    {
+      "cycle": 20,
+      "position": 5,
+      "run_id": "fault_paymentUnreachable_020",
+      "flag": "paymentUnreachable",
+      "variant": "on"
+    }
+  ]
+}
