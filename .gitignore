@@ -22,3 +22,7 @@ venv/
 /data/archive/
 /backup_before_restart/
 *.backup
+
+
+# Uncompressed fault telemetry (stored as ZIP archives)
+/data/raw/runs/fault_*/
